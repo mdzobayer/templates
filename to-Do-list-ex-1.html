@@ -20,35 +20,35 @@
 
     .flex-container {
         display: flex;
-        
+
         justify-content: center;
         align-items: center;
     }
+
     .main {
         margin-top: 120px;
         width: 500px;
     }
-    #lists {
-        background-color: #FFFFFF;
-    }
     .input-section {
         /* border: 5px solid #AE6BF8; */
         background-color: #AE6BF8;
-        padding: 5px;
+        padding: 7px;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 5px;
+        border-radius: 7px;
         /* border: 4px solid #AE6BF8;
         border-radius: 9px; */
     }
-    .input-section > input {
+
+    .input-section>input {
         width: 345px;
         height: 27px;
         font-size: 20px;
         padding: 10px;
     }
-    .input-section > button {
+
+    .input-section>button {
         width: 117px;
         height: 49px;
         background-color: #4DB7F9;
@@ -58,17 +58,50 @@
         margin: 0;
         padding: 0;
     }
-    .input-section > button:hover {
+
+    .input-section>button:hover {
         background-color: #ffffff;
         color: #4fb7f9
     }
+
     .output-section {
         background-color: #AE6BF8;
-        padding: 5px;
+        padding: 7px;
         display: flex;
-        border-radius: 5px;
+        border-radius: 7px;
     }
 
+    #lists {
+        background-color: #FFFFFF;
+        padding-bottom: 10px;
+    }
+
+    #lists > div {
+        width: 486px;
+        overflow: hidden;
+        background-color: #FFFFFF;
+    }
+
+    #lists p {
+        font-size: 21px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: gray;
+    }
+    .horizontal-line {
+        width: 75px;
+        margin-left: 210px;
+    }
+    .horizontal-line > hr {
+        border: 1px solid #AE6BF8;
+        border-radius: 1px;
+        
+    }
+    #lists hr {
+        border: 1px solid rgb(216, 213, 213);
+        border-radius: 1px;
+    }
 </style>
 
 <body>
@@ -78,14 +111,28 @@
                 <input type="text" placeholder="What will you do today ?">
                 <button>ADD</button>
             </section>
-            <br/>
+            <br />
+            <div class="horizontal-line">
+                <hr>
+            </div>
+            <br />
             <div class="output-section">
-            <section id="lists">
-                <p>Need to create sp</p>
-                <p>Send 50 email to clients</p>
-                <p>Send newsletter to subscriber</p>
-            </section>
-        </div>
+                <section id="lists">
+                    <div>
+                        <p>Need to create sp</p>
+                        <hr>
+                        <p>Send 50 email to clients</p>
+                        <hr>
+                        <p>Send newsletter to subscriber</p>
+                        <hr>
+                    </div>
+
+                </section>
+            </div>
+            <br />
+            <div class="horizontal-line">
+                <hr>
+            </div>
         </div>
     </div>
 </body>
